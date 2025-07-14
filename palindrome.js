@@ -24,7 +24,7 @@ const emptyInput = inputField.value = "";
     resultDisplay.classList.add('palindrome')
       emptyInput;
     }else{ 
-    resultDisplay.textContent = `❌ AHHH ${str} is not a palindrome`;
+    resultDisplay.textContent = `❌ OOOPPS ${str} is not a palindrome`;
     resultDisplay.classList.add('not-palindrome')
     emptyInput
     }
