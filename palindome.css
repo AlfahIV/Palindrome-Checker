@@ -57,15 +57,13 @@ input::placeholder{
 }
 #resultDisplay{
   width: 60%;
-  /* height: min(5%,20px); */
   padding: 10px;
   margin: 50px auto;
   background-color: #ccc;
-  animation: Display 2s infinite ease-out;
+  animation: Display 2s infinite ease-out, slideUp 2s ;
   color: white;
   text-align: center;
   font-weight: bold;
-  /* font-size: min(2%,10px); */
   border-radius: 5px;
 }
 /* Success style */
@@ -83,6 +81,17 @@ input::placeholder{
   animation: Display 2s infinite ease-out;
 
 }
+@keyframes slideUp{
+from{
+opacity: 0;
+transform: translateY(-10px);
+}
+to{
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
 @keyframes Display {
   0%{
 opacity: 0.8;
